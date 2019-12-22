@@ -1,0 +1,10 @@
+{% extends "test_app/base.html" %}
+{% block content %}
+<h2>You have Been Logged Out!</h2>
+    <div class="border-top pt-3">
+        <small class="text-muted">
+            <a href="{% url 'login' %}" class="ml-2">Log In Again!</a><br>
+            <br><h4><a href="{% url 'test-home' %}" class="ml-2">Home</a></h4>
+        </small>
+    </div>
+{% endblock content %}
